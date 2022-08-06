@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Etch A Sketch</title>
+        <script src="java.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="title">Sketch Pad</h1>
+        <div id="container">
+            <div id="grid-container"></div>
+            <div class="key-container">
+                <button id="black">""</button>
+                <button id="eraser">Eraser</button>
+                <button id="rainbow">RGB</button>
+                <button id="display-grid">Display Grid</button>
+                <button id="remove-grid">Remove Grid</button>
+                <input id="myValue" type="range" min="1" max="64" value="1" oninput="dragFunction()">
+                <p id="demo">Grid Size</p>     
+            </div>
+        </div>
+        
+    </body>
+</html>
