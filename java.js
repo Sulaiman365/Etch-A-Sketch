@@ -27,8 +27,6 @@ gridAttributes();
 {
     const grids = document.createElement('div');
     grids.classList.add('grids');
-    //grids.style['background-color']='blue';
-    //grids.setAttribute('style', `border-style: dashed; border-color: black;`); 
     gridContainer.appendChild(grids);   
 }
 
@@ -66,7 +64,13 @@ grids.style.backgroundColor = 'white';
   const rainbow = document.querySelectorAll('.grids');
   rainbow.forEach((grids) => {
   grids.addEventListener('mouseenter', (e) =>{
-  grids.style.backgroundColor = 'rgb(202, 107, 107)';
+    function getRndInteger(min, max) {
+      return Math.floor(Math.random() * (max - min)) + min;
+    }
+    let r = getRndInteger(15,202);
+    let g = getRndInteger(15,202);
+    let b = getRndInteger(15,202);
+  grids.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 })
 })
 })

@@ -85,3 +85,11 @@ button {
     margin: 20px;
     border-style: solid;
 }
+#copywrite
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
