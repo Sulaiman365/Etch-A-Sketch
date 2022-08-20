@@ -85,11 +85,17 @@ button {
     margin: 20px;
     border-style: solid;
 }
+#display-grid:active,#remove-grid:active
+{
+    background-color: grey;
+}
 #copywrite
 {
     display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    margin-top: 80px;
+    justify-content: center;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

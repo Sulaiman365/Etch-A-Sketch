@@ -1,7 +1,7 @@
 const gridContainer = document.querySelector('#grid-container');
 const dragInput = document.querySelector('#myValue');
 
-let i;
+let i; //dimension
 function dragFunction() {
     i = document.getElementById("myValue").value;
   document.getElementById("demo").innerHTML = `Grid Size: ${i} X ${i}`
@@ -84,6 +84,8 @@ displayGrid.forEach((grids) => {
   grids.setAttribute('style', `border-style: solid; border-color: black; border-width: 0.001px`); 
 })
 })
+
+//Remove grid
 const removeGrid = document.querySelector('#remove-grid');
 removeGrid.addEventListener('click', () => {
 const gridRemover = document.querySelectorAll('.grids');
@@ -91,8 +93,6 @@ gridRemover.forEach((grids) => {
   grids.setAttribute('style', `border: none`); 
 })
 })
-
-
 
 })
 
